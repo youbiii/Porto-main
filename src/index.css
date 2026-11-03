@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1E2328;
+    color: #F3F4F6;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-sora {
+    font-family: 'Sora', sans-serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1E2328;
+}
+::-webkit-scrollbar-thumb {
+  background: #3B3F46;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F5B301;
+}
+
+/* Custom Utilities for aesthetic touches */
+.yellow-glow {
+  box-shadow: 0 0 25px -5px rgba(245, 179, 1, 0.15);
+}
+
+.yellow-glow-sm {
+  box-shadow: 0 0 15px -3px rgba(245, 179, 1, 0.2);
+}
+
+.yellow-gradient-text {
+  background: linear-gradient(135deg, #FCD053 0%, #F5B301 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom scrollbar untuk area modal */
+[data-lenis-prevent]::-webkit-scrollbar {
+  width: 6px;
+}
+[data-lenis-prevent]::-webkit-scrollbar-track {
+  background: transparent;
+}
+[data-lenis-prevent]::-webkit-scrollbar-thumb {
+  background: #2b3038;
+  border-radius: 9999px;
+}
+[data-lenis-prevent]::-webkit-scrollbar-thumb:hover {
+  background: #f5b301;
+}
